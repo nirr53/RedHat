@@ -62,11 +62,11 @@ class line_searcher_input():
         return data
 
     def print_help(self):
-            print("\n\t------------------ H E L P -----------------\n")
-            print("\tline_searcher.py -r <--regex> [[[[-f <--files>] -u] -c] -m]")
-            print("\t-r, --regex     mandatory - the regular expression to search for.")
-            print("\t-f, --files     optional  - a list of files to search in.")
-            print("\t                If this parameter is omitted, the script expects text input from STDIN.")
-            print("\t-u, --underline optional  - \"^\" is printed underneath the matched text.")
-            print("\t-c, --color     optional  - the matched text is highlighted in color - RED, PURPLE, BLUE, JADE, GREEN and YELLOW")
-            print("\t-m, --machine   optional  - print the output in the format: \"file_name:line_number:start_position:matched_text\".\n")
+        print("\n\t------------------ H E L P -----------------\n")
+        print("\tline_searcher.py -r <--regex> [[[[-f <--files>] -u] -c] -m]")
+        print("\t-r, --regex     mandatory - the regular expression to search for.")
+        print("\t-f, --files     optional  - a list of files to search in.")
+        print("\t                If this parameter is omitted, the script expects text input from STDIN.")
+        print("\t-u, --underline optional  - \"^\" is printed underneath the matched text.")
+        print("\t-c, --color     optional  - the matched text is highlighted in color - RED, PURPLE, BLUE, JADE, GREEN and YELLOW")
+        print("\t-m, --machine   optional  - print the output in the format: \"file_name:line_number:start_position:matched_text\".\n")
