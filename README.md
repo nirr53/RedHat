@@ -1,6 +1,7 @@
 # RedHat
 A script that receive an input (file, files or just a stdin) and regular expression, and return the regex matches
 
+# basic syntax#
 line_searcher.py -r <--regex> [[[[-f <--files>] -u] -c] -m]")
 -r, --regex     mandatory - the regular expression to search for.")
 -f, --files     optional  - a string or path to directory or file to search in.")
