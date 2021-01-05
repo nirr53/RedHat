@@ -21,4 +21,4 @@ This command will search the regex in the given directory files
 
 4. **line_searcher.py -r "nir"** - This command will search the regex in entered STDIN ('enter' for a new line, ctrl+d to end)
 
-5. **line_searcher.py -r "nir" -u -c BLUE -m ** - This command will search the regex in entered STDIN, colored the findings with blue, add underline with ^^ and prints the results on vm syntax
+5. **line_searcher.py -r "nir" -u -c BLUE -m -f "input/"** - This command will search the regex in entered directory, colored the findings with blue, add underline with ^^ and prints the results on vm syntax
