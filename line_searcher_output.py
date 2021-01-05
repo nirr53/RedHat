@@ -109,7 +109,7 @@ class line_searcher_output():
                     words = line.split()
                     _temp_line = ""
                     for word in words:
-                        if self.regex in word:
+                        if re.search(self.regex, word):
                             _temp_line += word + " "
                     matches_list.append([filename, file_line_num, _temp_line, line.find(self.regex)])
                 else:

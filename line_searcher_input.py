@@ -2,6 +2,7 @@ import getopt
 import sys
 import os
 
+
 class line_searcher_input():
 
     def __init__(self):
@@ -16,7 +17,6 @@ class line_searcher_input():
                 _regex = arg
             elif "-f" in opt:
                 _files = arg
-                # print("1--{}--".format(_files))
             elif "-u" in opt:
                 _is_underline = True
             elif "-c" in opt:
@@ -56,7 +56,6 @@ class line_searcher_input():
             else:
                 print("The input path <{}> is invalid !".format(_files))
                 exit(sys.exit(2))
-        # print("2--{}--".format(data))
         return data
 
     def print_help(self):

@@ -18,5 +18,3 @@ data = in_parser.read_stdin_input(_files)
 
 # Search the regex in the given data, and print it according the supported flags
 out_searcher.searh_and_print(_files, data)
-
-# todo debuging
