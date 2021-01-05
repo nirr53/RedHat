@@ -11,17 +11,14 @@ line_searcher.py -r <--regex> [[[[-f <--files>] -u] -c] -m]")
 - -m, --machine   optional  - print the output in the format: "file_name:line_number:start_position:matched_text"
 
 ## Examples:
-- line_searcher.py -r "nir" -f "sssnirgggg"
+1. **line_searcher.py -r "nir" -f "sssnirgggg"** -
 This command will search the regex in the given string
 
-- line_searcher.py -r "nir" -f "input/" 
+2. **line_searcher.py -r "nir" -f "input/"** -  
 This command will search the regex in the given directory files
 
-- line_searcher.py -r "nir" -f "input/input1.txt" 
-This command will search the regex in the given file
+3. **line_searcher.py -r "nir" -f "input/input1.txt"** - This command will search the regex in the given file
 
-- line_searcher.py -r "nir"
-This command will search the regex in entered STDIN ('enter' for a new line, ctrl+d to end)
+4. **line_searcher.py -r "nir"** - This command will search the regex in entered STDIN ('enter' for a new line, ctrl+d to end)
 
-- line_searcher.py -r "nir" -u -c BLUE -m 
-This command will search the regex in entered STDIN, colored the findings with blue, add underline with ^^ and prints the results on vm syntax
+5. **line_searcher.py -r "nir" -u -c BLUE -m ** - This command will search the regex in entered STDIN, colored the findings with blue, add underline with ^^ and prints the results on vm syntax
