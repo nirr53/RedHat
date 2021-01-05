@@ -20,8 +20,9 @@ class line_searcher_output():
 
     def searh_and_print(self, is_files, data):
         matches_list = []
-        if is_files:
-            is_file = True if os.path.isfile(is_files) else False
+        is_file = True if os.path.isfile(is_files) else False
+        is_dir  = True if os.path.isdir(is_files) else False
+        if is_files and (is_file or is_dir):
             for _file in data:
                 if is_file:
                     full_path = _file

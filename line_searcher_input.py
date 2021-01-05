@@ -54,8 +54,11 @@ class line_searcher_input():
             elif os.path.isfile(_files):
                 data.append(_files)
             else:
-                print("The input path <{}> is invalid !".format(_files))
-                exit(sys.exit(2))
+                if isinstance(_files, str):
+                    data.append(_files)
+                else:
+                    print("The input path <{}> is invalid !".format(_files))
+                    exit(sys.exit(2))
         return data
 
     def print_help(self):
