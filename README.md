@@ -1,7 +1,7 @@
 # RedHat
 A script that receive an input (file, files or just a stdin) and regular expression, and return the regex matches
 
-## basic syntax
+## basic syntax:
 line_searcher.py -r <--regex> [[[[-f <--files>] -u] -c] -m]")
 - -r, --regex     mandatory - the regular expression to search for.")
 - -f, --files     optional  - a string or path to directory or file to search in.
@@ -10,4 +10,18 @@ line_searcher.py -r <--regex> [[[[-f <--files>] -u] -c] -m]")
 - -c, --color     optional  - the matched text is highlighted in color - RED, PURPLE, BLUE, JADE, GREEN and YELLOW
 - -m, --machine   optional  - print the output in the format: "file_name:line_number:start_position:matched_text"
 
-## Examples
+## Examples:
+- line_searcher.py -r "nir" -f "sssnirgggg"
+This command will search the regex in the given string
+
+- line_searcher.py -r "nir" -f "input/" 
+This command will search the regex in the given directory files
+
+- line_searcher.py -r "nir" -f "input/input1.txt" 
+This command will search the regex in the given file
+
+- line_searcher.py -r "nir"
+This command will search the regex in entered STDIN ('enter' for a new line, ctrl+d to end)
+
+- line_searcher.py -r "nir" -u -c BLUE -m 
+This command will search the regex in entered STDIN, colored the findings with blue, add underline with ^^ and prints the results on vm syntax
